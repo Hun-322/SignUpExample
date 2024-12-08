@@ -11,33 +11,41 @@ final class HomeMainView: UIView {
     
     // MARK: - Properties
     
-    private let logoView = AppLogoView()
+    private let appLogoView = AppLogoView()
+    private let loginInputView = LoginInputView()
     
     // MARK: - initialize
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         addSubviews()
-        setupUI()
-        
+        setupLayout()
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
+    // MARK: - Functions
+    
     private func addSubviews() {
-        addSubview(logoView)
+        addSubview(appLogoView)
+        addSubview(loginInputView)
     }
     
-    private func setupUI() {
+    private func setupLayout() {
         self.backgroundColor = .white
-        logoView.translatesAutoresizingMaskIntoConstraints = false
+        appLogoView.translatesAutoresizingMaskIntoConstraints = false
+        loginInputView.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
-            logoView.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 48),
-            logoView.centerXAnchor.constraint(equalTo: self.centerXAnchor),
-            logoView.heightAnchor.constraint(equalToConstant: 124)
+            appLogoView.topAnchor.constraint(equalTo: self.safeAreaLayoutGuide.topAnchor, constant: 48),
+            appLogoView.centerXAnchor.constraint(equalTo: self.centerXAnchor),
+            appLogoView.heightAnchor.constraint(equalToConstant: 124),
+            
+            loginInputView.topAnchor.constraint(equalTo: self.appLogoView.bottomAnchor, constant: 32),
+            loginInputView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 18),
+            loginInputView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -18),
         ])
     }
 }

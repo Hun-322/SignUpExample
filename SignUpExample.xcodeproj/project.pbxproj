@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		541E31AD2D043B8600CBF062 /* AppLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E31AC2D043B8600CBF062 /* AppLogoView.swift */; };
+		541E31AF2D0488EB00CBF062 /* LoginInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541E31AE2D0488EB00CBF062 /* LoginInputView.swift */; };
 		543D59A92D019D9B0041566D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543D59A82D019D9B0041566D /* AppDelegate.swift */; };
 		543D59AB2D019D9B0041566D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543D59AA2D019D9B0041566D /* SceneDelegate.swift */; };
 		543D59AD2D019D9B0041566D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543D59AC2D019D9B0041566D /* HomeViewController.swift */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		541E31AC2D043B8600CBF062 /* AppLogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLogoView.swift; sourceTree = "<group>"; };
+		541E31AE2D0488EB00CBF062 /* LoginInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInputView.swift; sourceTree = "<group>"; };
 		543D59A52D019D9B0041566D /* SignUpExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SignUpExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		543D59A82D019D9B0041566D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		543D59AA2D019D9B0041566D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				541E31AC2D043B8600CBF062 /* AppLogoView.swift */,
+				541E31AE2D0488EB00CBF062 /* LoginInputView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 				543D59A92D019D9B0041566D /* AppDelegate.swift in Sources */,
 				543D59DF2D01AC930041566D /* HomeMainView.swift in Sources */,
 				543D59AB2D019D9B0041566D /* SceneDelegate.swift in Sources */,
+				541E31AF2D0488EB00CBF062 /* LoginInputView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
