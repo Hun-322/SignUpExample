@@ -26,6 +26,7 @@ final class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("테스트")
     }
     
     override func loadView() {
