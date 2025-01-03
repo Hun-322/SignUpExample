@@ -26,6 +26,7 @@ final class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("소스트리 연결 테스트")
     }
     
     override func loadView() {
